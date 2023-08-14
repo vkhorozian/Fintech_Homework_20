@@ -57,13 +57,14 @@ contract JointSavings {
         }
 
         // Call the `transfer` function of the `recipient` and pass it the `amount` to transfer as an argument.
+        recipient.transfer(amount);
 
-        transfer(amount);
         // Set  `lastWithdrawAmount` equal to `amount`
+        lastWithdrawAmount = amount;
 
-        uint lastWithdrawAmount = amount;
-        // Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance` to reflect the new balance of the contract.
-        // YOUR CODE HERE!
+        // Update the `contractBalance` variable to reflect the new balance of the contract.
+        contractBalance = address(this).balance;
+
     }
 
     // Define a `public payable` function named `deposit`.

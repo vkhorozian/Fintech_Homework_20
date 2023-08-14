@@ -101,6 +101,8 @@ To interact with your deployed smart contract, complete the following steps:
 
 ### Submission
 
+![img](./Images/remix_screenshot.png)
+
 * Upload the files for this assignment to your GitHub repository.
 
 * Submit the link to your GitHub repo on Bootcamp Spot.
